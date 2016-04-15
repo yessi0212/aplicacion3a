@@ -1,0 +1,485 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicación</title>
+
+<!-- grupo CSS -->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!-- grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+  <div data-role="page" id="Principal" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+      <h1>Popocatépetl.</h1>
+    </div>
+    
+    <div align="center">
+       <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:100%;height:25%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+    </div>
+  
+ <div>
+       <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-c">
+         <li class="ui-first-child ui-last-child">
+           <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Características.</h2>
+           </a>
+        </li>
+         <li class="ui-first-child ui-last-child">
+           <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Medidas De Prevención.</h2>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Estados Afectados.</h2>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+               <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Otros Volcanes Del Mundo.</h2> 
+               </a>
+              </li>
+         </ul>
+ </div>
+ 
+<div data-role="footer" align="center" data-theme="c">
+   <div>
+     <h4>Aplicacion Tres</h4>
+   </div>
+  <div>  
+    <img src="imagenes/Mountain-icon.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Yessica Perez Morales</h4>
+     </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+  <h1>Características.</h1>
+   </div>
+   <div data-role="content" align="center">
+    
+    
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>Medidas Del Volcan</h1>
+          <div align="justify">
+          <p>Su altura es de 5500 msnm, es de forma cónica, tiene un diámetro de 25 km en su base y la cima es el corte elíptico de un cono y tiene una orientación noreste-suroeste. La distancia entre las paredes de su cráter varía entre los 660 y los 840 m.
+          </p>
+          <br>
+          </div>
+   <div>
+     <img src="imagenes/monitoreo2.jpg"> </div>
+     </div>
+     </div>
+    
+    
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>Antigüedad Del Volcan.</h1>
+          <div align="justify">
+          <p>El Popocatépetl es un estratovolcán, y los estudios paleomagnéticos que se han hecho de él indican que tiene una edad aproximada de 730 000 años.
+          </p>
+          <br>
+          </div>
+   <div>
+     <img src="imagenes/popo1.jpg"> </div>
+     </div>
+     </div>
+    
+    
+     <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>Localización Del Volcan.</h1>
+          <div align="justify">
+          <p>El Popocatépetl esta ubicado en los estados de Morelos, Puebla (45 kilometros) y el Estado de México( a 55 kilometros). Al sur de la Sierra Volcánica Transversal que constituye la espina dorsal del Altiplano Mexicano.
+          </p>
+          <p>
+          En el Estado de México colinda con los municipios: Tlamanalco, Amecameca, Atlauta y Ecatzingo.
+          </p>
+          <p>
+          Con el estado de Morelos colinda específicamente con el municipio de Tetela del Volcán.
+          </p>
+          <p>
+          Por la parte de Puebla colinda con Huejotzingo, San Salvador el Verde, Domingo Arenas, San Nicolás de los Ranchos y Tochimilco.
+          </p>
+          <br>
+          </div>
+   <div>
+     <img src="imagenes/popo1.jpg"> </div>
+     </div>
+     </div>
+    
+    
+     <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>Actividad y Monitoreo</h1>
+          <div align="justify">
+          <p>El Popocatépetl es conocido por sus alta actividad volcánica, que se presenta comúnmente. Desde que se reactivó, en 1997, hasta el momento, ha presentado una serie de erupciones de las cuales la más violenta ha sido la del año 2000, y la última la noche del 4 y madrugada del 5 de noviembre de 2014. El volcán es uno de los más monitoreados del mundo y también es uno de los más peligrosos y que amenaza más de 26 millones de personas.
+          </p>
+          <br>
+          </div>
+   <div>
+     <img src="imagenes/actividad.jpg"> </div>
+     </div>
+     </div>
+   </div>
+   
+   
+   <div data-role="footer" data-theme="c">
+     <h4>Yessica Perez Morales</h4>
+   </div>
+   </div>
+</div>
+   
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+  <h1>Medidas De Prevención.</h1>
+  </div>
+  <div data-role="content" align="center">
+      <h1>En caso de:</h1>
+  
+     <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>Caida de Ceniza</h1>
+          <div align="justify">
+          <div align="justify">
+         
+     </div>
+          <p>
+          •	No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado</p>
+          <p>
+•	Mantén la calma.</p>
+<p>
+•	Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.</p>
+<p>
+•	No realices actividades al aire libre y si es posible no salgas.
+</p>
+<p>
+•	Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.
+</p>
+<p>
+•	Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.
+</p>
+<p>
+•	Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.
+</p>
+<p>
+•	Ten a la mano una linterna y pilas.
+</p>
+<p>
+•	La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. Toma las precauciones necesarias.
+</p>
+<p>
+•	Cubre tinacos, cisternas y depósitos de agua.
+</p>
+<p>
+•	Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no permitas que se vaya al drenaje.
+</p>
+<p>
+•	Si es posible no conduzcas, si tienes que hacerlo, hazlo a baja velocidad y con las luces encendidas, ya que la ceniza dificulta la visibilidad y provoca que el pavimento se vuelva resbaloso.
+</p>
+<p>
+•	Ante la caída de ceniza volcánica evita consumir alimentos en la vía pública.
+</p>
+<p>
+•	Si permaneces expuesto por algún tiempo a las cenizas volcánicas, al ingresar a tu casa se recomienda cambiar de ropa.
+</p>
+<p>
+•	Durante la caída de ceniza volcánica, evita que los menores realicen actividades al aire libre.
+</p>
+<p>
+•	Mantén a tus mascotas en un lugar techado al igual que sus alimentos. Si tus macotas salen, cepíllalos antes de permitirles la entrada nuevamente.
+</p>
+<p>
+•	La ceniza puede ser usada para parques, jardines, macetas o tierras de cultivo, ya que es rica en minerales.
+</p>
+<p>
+•	No repitas ni difundas rumores. La ciudad de Puebla se encuentra a una distancia segura, no intentes salir.
+</p>
+<p>
+•	Usa las vías de comunicación solo en caso de ser necesario.
+</p>
+          <br>
+           <div align="center">
+     <center><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','imagenes/ceniza1.jpg',1)"><img src="imagenes/ceniza2.jpg" width="317" height="294" id="Image2" /></a></center>
+     </div>
+     </div>
+          </div>
+  
+     </div>
+     
+     
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>Erupción</h1>
+          <div align="justify">
+            <h2>Antes de una erupción volcánica</h2>
+            <p>
+            Lo primero que necesitamos, sea cual sea el desastre, es un kit de emergencia. Es posible que tengamos que sobrevivir sin ayuda después del fenómeno, lo cual significa que necesitaremos comida, agua y otros suministros en cantidad suficiente para resistir al menos tres días. 
+            </p>
+            <p>
+            El kit básico debe contener:
+            </p>
+            <p>
+•	Comida no perecedera en cantidad suficiente para tres días
+</p>
+<p>
+•	Agua en cantidad suficiente para tres días
+</p>
+<p>
+•	Radio o televisión portátil a pilas y pilas de repuesto
+</p>
+<p>
+•	Linterna
+</p>
+<p>
+•	Botiquín de primeros auxilios
+</p>
+<p>
+•	Artículos de higiene (toallitas húmedas y papel higiénico)
+</p>
+<p>
+•	Cerillas y recipiente impermeable
+</p>
+<p>
+•	Silbato
+</p>
+<p>
+•	Ropas de repuesto
+</p>
+<p>
+•	Accesorios de cocina y utensilios para cocinar, incluyendo un abrelatas
+</p>
+<p>
+•	Fotocopias del carnet de identidad y las tarjetas de crédito
+</p>
+<p>
+•	Dinero en efectivo
+</p>
+<p>
+•	Artículos que respondan a necesidades especiales como recetas médicas, gafas, lentillas, etc.
+</p>
+<p>
+•	Suministros para niños, como pañales.
+</p>
+<p>
+•	En caso de vivir en una zona muy fría, debemos tener en cuenta que quizá no encontremos calor, así que debemos incluir una muda completa de ropa y zapatos por persona, incluyendo abrigos, bufandas, guantes, etc.
+</p>
+<p>
+•	Un par de gafas y mascarillas desechables para cada miembro de la familia
+</p>
+      <div>
+     <img src="imagenes/kitbasico.jpg">
+     </div>
+     
+     
+     <h2>Durante una erupción volcánica</h2>
+     <p>•	Proceda inmediatamente a la evacuación para evitar los escombros volantes, gases calientes, explosiones laterales y corrientes de lava.
+     </p>
+     <p>
+•	Tenga cuidado con los flujos de lodo. El daño que estos flujos pueden provocar aumenta con las lluvias persistentes y se mueven con más rápido de lo que nosotros podemos andar o correr. Mire corriente arriba cuando vaya a cruzar un puente y nunca lo cruce si se aproxima un flujo de lodo. 
+     </p>
+     <p>
+•	Use ropa que le cubra todo el cuerpo para proteger la piel
+     </p>
+     <p> 
+•	Use gafas y mascarilla o un paño húmedo para facilitar la respiración
+Si se queda atrapado dentro de su hogar:
+     </p>
+     <p>
+•	Cierre ventanas, puertas y toda abertura al exterior
+     </p>
+     <p>
+•	Asegúrese de que los animales se encuentran bajo un refugio cubierto
+Si se queda atrapado en el exterior:
+     </p>
+     <p>
+•	Busque refugio bajo techo
+     </p>
+     <p>
+•	Evite áreas bajas donde los flujos de lodo pueden ser más peligrosos
+</p>
+       <div align="center">
+     <img src="imagenes/evacuacion.jpg">
+     </div>
+     
+     
+     <h2>Después de una erupción volcánica</h2>
+     <p>
+     •	Manténgase alejado de la ceniza volcánica
+     </p>
+     <p>
+•	No conduzca a través de ella, daña los vehículos
+     </p>
+     <p>
+•	Si tuvo que evacuar su hogar y al volver encuentra ladrones saqueándolo, no se enfrente a ellos. Pida ayuda.
+     </p>
+     <p>
+•	Hierva el agua que vaya a beber.
+     </p>
+     <p>
+•	Encienda la radio o televisión de su kit de emergencias para obtener noticias y posibles instrucciones
+     </p>
+     <p>
+•	Si padece alguna dolencia respiratoria, no salga de su hogar hasta que se confirme que no hay riesgo.
+      </p>
+      <p>
+•	Limpie la ceniza de los techos, puesto que pesa y puede provocar derrumbes
+     </p>
+     <p>
+•	Revise con precaución si funcionan luz, agua, gas y teléfono
+     </p>
+     <p>
+•	Ayude a las personas heridas o que han quedado atrapadas. Pida ayuda a los servicios de emergencia.
+     </p>
+     <div align="center">
+     <img src="imagenes/erupcion2.jpg">
+     </div>
+     
+          </div>
+      </div>
+     </div>
+  </div>
+      <div data-role="footer" data-theme="c">
+        <h4>Yessica Perez Morales</h4>
+        </div>
+       </div>
+       </div>
+      
+      
+      
+      
+      
+       
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+      <h1>Estados Afectados</h1>
+  </div>
+  <div data-role="content" align="center">
+       
+       <div align="justify">
+       <p>
+       Los estados afectados en caso de una erupción del volcan Popocatepetl serian:
+       </p>
+       <p>
+•	Ciudad de México
+       <div align="center">
+       <img src="imagenes/mexico.jpg">
+       </div>
+       </p>
+       <p>
+•	Puebla
+       <div align="center">
+       <img src="imagenes/puebla.png">
+       </div>
+        </p>
+        <p>
+•	Morelos
+        <div align="center">
+       <img src="imagenes/cuernavaca.jpg">
+       </div>
+       </p>
+       <p>
+•	Tlaxcala
+         <div align="center">
+       <img src="imagenes/tlaxcala.png">
+       </div>
+       </p>
+       </div>
+    
+      
+      </div>
+      
+     <div data-role="footer" data-theme="c">
+       <h4>Yessica Perez Morales</h4>
+      </div>
+     </div>
+    </div>
+    
+    
+    
+    
+    
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+    <h1>Otros Volcanes Del Mundo</h1>
+   </div>
+   <div data-role="content" align="center">
+     
+     
+      <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>Monte Vesubio, Italia</h1>
+          <div align="justify">
+          <p>Se trata de un volcán activo de tipo vesubiano, con 1.871 metros de altura sobre el nivel del mar. Hay otros volcanes italianos, hoy activos y más altos que éste (Stromboli, Vulcano, Etna, etc), pero ninguno ocupa una página tan destacada en la historia de la Vulcanología, como el Vesubio. En el año 79 d.C, durante el imperio de Tito, parte de la Campania romana se vio asolada por una tragedia volcánica. El Vesubio, cerca de la actual Nápoles, cubría de cenizas en pocas horas la ciudad de Pompeya y anegaba en fango las de Herculano y Stabias. La cobertura con que el volcán recubrió a Pompeya ha facilitado, paradójicamente su conservación casi intacta, lo que ha permitido a los historiadores, desde el siglo XVIII, conocer muchísimos más detalles de la vida romana. La mayor parte de las 20.000 personas que murieron en dichas ciudades sufrieron asfixia debido a los vapores de azufre emanados del cráter del Vesubio. Hoy en día se considera que el Vesubio está extinguido. Es una atracción turística de primer orden y sus laderas están recubiertas de flora variada y viñedos. Entre los aspectos más importantes de los descubrimientos arqueológicos de Pompeya, destaca el grado de conservación extraordinario de los objetos encontrados. La lluvia de cenizas húmedas que acompañó a la erupción formó un sello hermético sobre la ciudad, conservando muchas estructuras públicas, templos, teatros, termas, tiendas y casas particulares. Además, entre las ruinas se encontraron los restos de más de 2.000 víctimas del desastre, incluidos varios gladiadores encadenados para que no se escaparan o se suicidaran.
+          </p>
+          <br>
+          </div>
+   <div>
+     <img src="imagenes/Vesubio.jpg"> </div>
+     </div>
+     </div>
+     
+     
+     
+     
+     
+      <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>Volcán Kilauea, Hawai</h1>
+          <div align="justify">
+          <p>En el territorio de los Estados Unidos cabe destacar el volcán Kilauea, un volcán en escudo, característico de los volcanes con erupciones de tipo hawaiano. Tiene una altitud de 1.122 metros sobre el nivel del mar. Se asienta en la parte sur de la isla hawaiana de Mauna Loa, es uno de los más activos del planeta. Se caracteriza por su lenta emisión, casi ininterrumpida  de lava, que puede cubrir grandes extensiones de terreno e incluso llegar al mar, formando uno de los espectáculos más vistosos de la naturaleza, cuando los pedazos de roca ardiente y brillante se sumergen en las aguas del océano pacífico y con el tiempo se consolidan, por lo que este tipo de volcán, consigue que la isla le gane metros al mar. Una larga erupción en 1983, produjo flujos de lava que cubrieron una extensión de 100 km cuadrados y destruyeron unas 200 casas. La impresionante caldera del Kilauea tiene una profundidad de 165 metros, y su diámetro varía entre 3 y 5 kilómetros. En detrimento de otros volcanes hawaianos, como Loihi, Mauna Loa o el Hualalai, el Kilauea es considerado por los nativos como el hogar de la diosa del fuego, Pele.
+          </p>
+          <br>
+          </div>
+   <div>
+     <img src="imagenes/kilauea.jpg"> </div>
+     </div>
+     </div>
+     </div>
+       <div data-role="footer" data-theme="c">
+     <h4>Yessica Perez Morales</h4>
+   </div>
+   </div>
+</div>
+       
+    
+</body>
+</html>
